@@ -3,7 +3,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from calculator import add, subtract, multiply, divide
+from calculator import add, subtract, multiply, divide, power
 
 
 def test_add():
@@ -20,3 +20,6 @@ def test_multiply():
 
 def test_divide():
     assert divide(20, 4) == 5
+
+def test_power():
+    assert power(2, 3) == 8

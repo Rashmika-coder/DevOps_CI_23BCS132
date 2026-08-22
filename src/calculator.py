@@ -16,6 +16,10 @@ def divide(a, b):
     return a / b
 
 
+def power(a, b):
+    return a ** b
+
+
 if __name__ == "__main__":
     print("DevOps CI Calculator")
     print("2 + 3 =", add(2, 3))
