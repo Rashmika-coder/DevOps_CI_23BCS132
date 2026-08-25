@@ -3,7 +3,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from calculator import add, subtract, multiply, divide, power
+from calculator import add, subtract, multiply, divide, power, square_root
 
 
 def test_add():
@@ -23,3 +23,11 @@ def test_divide():
 
 def test_power():
     assert power(2, 3) == 8
+
+ 
+def test_divide_invalid_input():
+    import pytest
+
+    with pytest.raises(TypeError):
+        divide("10", 2)
+
