@@ -23,3 +23,10 @@ def test_divide():
 
 def test_power():
     assert power(2, 3) == 8
+
+    
+def test_divide_invalid_input():
+    import pytest
+
+    with pytest.raises(TypeError):
+        divide("10", 2)

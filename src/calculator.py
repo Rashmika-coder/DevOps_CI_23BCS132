@@ -9,8 +9,9 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
-
 def divide(a, b):
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError("Inputs must be numbers")
     if b == 0:
         raise ValueError("Cannot divide by zero")
     return a / b
@@ -18,6 +19,8 @@ def divide(a, b):
 
 def power(a, b):
     return a ** b
+
+
 
 
 if __name__ == "__main__":
