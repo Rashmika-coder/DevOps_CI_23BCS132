@@ -31,3 +31,6 @@ def test_divide_invalid_input():
     with pytest.raises(TypeError):
         divide("10", 2)
 
+def test_addition_basic():
+    assert 2 + 2 == 4
+
